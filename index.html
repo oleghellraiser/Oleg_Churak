@@ -3,70 +3,177 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css" >
+  <link href="http://fonts.googleapis.com/css?family=Cabin:400,500,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <title>MY SHOP</title>
 </head>
 <body>
   <header>
     <!--=======================HEADER BEGIN================================-->
-    <div class="grid-container outline">
-      <div class="row">
-        <div class="free-shipping">
-          GET FREE! SHIPPING ON ORDER OVER $100
-        </div>
-        <div class="login-info">
-          <a href="#">LOGIN / REGISTER</a>
-          <a href="#">USD<span class="caret"></span></a>
-          <span class="flag"></span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="search">
-          <i class="search-icon"></i>
-          SEARCH
-        </div>
-        <div class="logo">
+    <div class="header-top">
+      <div class="grid-container outline">
+        <div class="row">
 
-        </div>
-        <div class="wishlist">
-          <a href="#">
-            <i class="heart-icon"></i>
-            WISHLIST
-            <span class="count"></span>
-          </a>
-          <a href="#">
-            <i class="backet-icon"></i>
-            CHECKOUT
-          </a>
+          <div class="free-shipping col-6">
+            <div>
+              <img src="img/car.png" alt="">
+              <p>GET FREE! SHIPPING ON ORDER OVER <span>$100</span>
+              </p>
+            </div>        
+          </div>
+          <div class="login-info col-4">
+            <div class="login-info-float-right">
+              <p>
+                <a href="#">LOGIN</a> / 
+                <a href="#">REGISTER</a>
+              </p>
+              <nav class="currency">
+                <p>
+                  <a href="#">USD<span class="caret"></span></a>
+                </p>
+              </nav>
+              
+              <div class="top-flag">
+                <p>
+                  <img src="img/flag.png" alt="">
+                </p>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="navigation">
-          <ul class="navbar">
-            <li class="dropdown">
+    </div>
+    <div class="header">
+      <div class="grid-container outline">
+        <div class="row">
+          <div class="header-left-wrapper col-3">
+            <div class="search">
+              <i class="fa fa-search"></i>
+              <input type="text" placeholder="search">
+            </div>
+          </div>
+          <div class="header-center-wrapper col-6">
+            <div class="logo">
               <a href="#">
-                CATEGORY
-                <i class="burger-icon"></i>
+                <img src="img/logo.png" alt="">
               </a>
-            </li>
-            <li class="item active"><a href="#">HOME</a></li>
-            <li class="item"><a href="#">SHOP</a></li>
-            <li class="item"><a href="#">ACCESSORIES</a></li>
-            <li class="item"><a href="#">BRANDS</a></li>
-            <li class="item"><a href="#">PAGES</a></li>
-            <li class="item"><a href="#">BLOG</a></li>
-            <li class="dropdown">
-              <a href="#">
-                <i class="bag-icon"></i>
-                CART
-              </a>
-            </li>
-          </ul>
-          <ul class="list-sub-categories">
-            <li><a href="#"></a>T-SHIRTS & VESTS</li>
-            <li><a href="#"></a>JUMBERS & CARDIGANS</li>
-            <li><a href="#"></a>HOODIES & SWEATS</li>
-          </ul>
-          <div class="cart-popup-content"></div>
+            </div>  
+          </div>
+          <div class="header-right-wrapper col-3">
+            <div class="wish-check">
+              <ul class="wish-check-list">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-heart-o"></i>
+                    WISHLIST
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                    CHECKOUT
+                  </a>
+                </li>
+              </ul>
+              <div class="count-wishes">
+                <span>3</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-area">
+      <div class="grid-container outline">
+        <div class="row">
+          <div class="nav-left">
+            <a href="#">
+              CATEGORY
+              <i class="fa fa-bars"></i>
+            </a>
+            <ul>
+            <li><a href=""><span>*</span>T shirts &amp; vests</a></li>
+              <li><a href=""><span>*</span>Jumbers &amp; Cardigans</a></li>
+              <li><a href=""><span>*</span>Hoodies &amp; Sweets</a></li>
+              <li><a href=""><span>*</span>coats &amp; jackets</a></li>
+              <li><a href=""><span>*</span>shirts</a></li>
+              <li><a href=""><span>*</span>sports</a></li>
+              <li><a href=""><span>*</span>Swimwear</a></li>
+              <li><a href=""><span>*</span>Trousers</a></li>
+              <li><a href=""><span>*</span>Jeans</a></li>
+              <li class="last-child"><a href=""><span>*</span>shortsleeve denim shirts</a></li>
+            </ul>
+          </div>
+          <div class="nav-center">
+            <nav class="main-menu">
+              <ul>              
+                <li class="item active"><a href="#">HOME</a></li>
+                <li class="item"><a href="#">SHOP</a></li>
+                <li class="item"><a href="#">ACCESSORIES</a></li>
+                <li class="item"><a href="#">BRANDS</a></li>
+                <li class="item"><a href="#">PAGES</a></li>
+                <li class="item"><a href="#">BLOG</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="nav-right">
+            <a class="cart-link" href="#">
+              <img src="img/bag.png" alt="Bag">
+              CART: 2 ITEMS
+            </a>
+            <div class="cart-menu">
+              <div class="cart-item">
+                <div class="item-img">
+                  <a href="#"></a>
+                </div>
+                <div class="c-item-totals">
+                  <div class="c-item-totals-detail">
+                    <a href="#"><h5>men’s fashion blue jean coat</h5></a>
+                    <span>2 x $ 130.00</span>
+                  </div>
+                  <div class="close-icon-cart">
+                    <img src="img/close.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="cart-item">
+                <div class="item-img">
+                  <a href="#"></a>
+                </div>
+                <div class="c-item-totals">
+                  <div class="c-item-totals-detail">
+                    <a href="#"><h5>men’s fashion blue jean coat</h5></a>
+                    <span>2 x $ 130.00</span>
+                  </div>
+                  <div class="close-icon-cart">
+                    <img src="img/close.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="cart-totals">
+                <div class="c-totals-left">
+                  <p>Free shipping</p>
+                </div>
+                <div class="c-totals-right">
+                  <p>total   $350</p>
+                </div>
+              </div>
+              <div class="cart-view-bottom">
+                <div class="c-totals-left">
+                  <a href="#">View Cart</a>
+                </div>
+                <div class="c-totals-right">
+                  <a href="#">Check Out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -75,38 +182,47 @@
   <section>
 
     <!--=====-==================BANNER BEGIN=================================-->
-    <div class="grid-container banner outline">
-      <div class="row">
-        <img src="" alt="" class="summer-sale-img">
-        <h1 class="banner-title">GET UPTO 50% OFFER</h1>
-        <h1 class="banner-title">
-          <small>HOT & TRENDY BRANDED COLLECTION FOR MEN'S</small>
-        </h1>
-        <button>DISCOVER COLLECTION</button>
-        <div class="offer-tag"><i class="point-icon"></i>GET 20%</div>
+    <div class="banner">
+      <div class="grid-container outline">
+        <div class="row">
+          <div class="col-6">
+            <img src="" alt="" class="summer-sale-img">
+            <div class="banner-title">GET UPTO <span>50%</span> OFFER</div>
+            <div class="divider">
+
+            </div>
+            <div class="sub-title"><span>HOT</span> &amp; <span>TRENDY</span> BRANDED COLLECTION FOR MEN'S</div>
+            <button>DISCOVER COLLECTION</button>
+            <div class="offer-tag"><img src="img/offer-tag.png" alt=""></div>
+          </div>
+        </div>
       </div>
     </div>
     <!--=========================BANNER END===================================-->
 
 
     <!--========================FEATURES BEGIN================================-->
-    <div class="grid-container features outline">
-      <div class="row">
-        <div class="features-item">
-          <i class="phone-icon"></i>
-          01 (800) 433 633 Daily 10.00 to 22.00
-        </div>
-        <div class="features-item">
-          <i class="planet-icon"></i>
-          Fast delivery across  australia
-        </div>
-        <div class="features-item">
-          <i class="percent-icon"></i>
-          30% discount on order over $199
-        </div>
-        <div class="features-item">
-          <i class="arrow-icon"></i>
-          14-day return policy
+    <div class="features">
+      <div class="grid-container outline">
+        <div class="features-wrapper">
+          <div class="row">
+            <div class="features-item col-3">
+              <img src="img/phone.png" alt="">
+              <p>01 (800) 433 633<br>Daily 10.00 to 22.00</p> 
+            </div>
+            <div class="features-item col-3">
+              <img src="img/world.png" alt="">
+              <p>Fast delivery across<br>australia</p>            
+            </div>
+            <div class="features-item col-3">
+              <img src="img/discount.png" alt="">
+              <p>30% discount on order<br>over $199</p>            
+            </div>
+            <div class="features-item col-3">
+              <img src="img/return.png" alt="">
+              <p>14-day return policy</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -114,297 +230,380 @@
 
 
     <!--========================T-COLSING BEGIN===============================-->
-    <div class="grid-container trending-closing outline">
+    <div class="trending-closing">
+      <div class="grid-container outline">
+        <div class="row">
+          <div class="col-12">
+            <div class="heading-wrapper">
+              <h1 class="title-cards">TRENDING CLOTHING</h1>
+              <div class="multi-line"></div>
+              <div class="tab-panel">
+                <ul>
+                  <li class="active">
+                    <a href="#">new <span>x</span></a>
+                  </li>
+                  <li>
+                    <a href="#">top rated <span>x</span></a>
+                  </li>
+                  <li>
+                    <a href="#">trending <span>x</span></a>
+                  </li>
+                  <li>
+                    <a href="#"> best offer</a>
+                  </li>
+                </ul>
+
+                <div class="card-wrapper">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="tr-add-cart">
+                        <ul>
+                          <li><a class="fa fa-shopping-cart" href="#"></a></li>
+                          <li><a href="#">ADD TO CART</a></li>
+                          <li><a class="fa fa-heart" href="#"></a></li>
+                          <li><a class="fa fa-search" href="#"></a></li>
+                        </ul>
+                      </div>
+                      <div class="item-new">
+                        <p>New</p>
+                        <span>-10%</span>
+                      </div>
+                    </div>
+                    <div class="card-block">
+                      <a href="#">
+                        <h4>casual fashion wool coat</h4>
+                      </a>
+                      <p>$90.00
+                        <span><del>$100.00</del></span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="tr-add-cart">
+                        <ul>
+                          <li><a class="fa fa-shopping-cart" href="#"></a></li>
+                          <li><a href="#">ADD TO CART</a></li>
+                          <li><a class="fa fa-heart" href="#"></a></li>
+                          <li><a class="fa fa-search" href="#"></a></li>
+                        </ul>
+                      </div>
+                      <div class="item-new">
+                        <p>New</p>
+                      </div>
+                    </div>
+                    <div class="card-block">                     
+                      <a href="#">
+                        <h4>v-neck men blue t-shirt</h4>
+                      </a>
+                      <p>$95.66
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="tr-add-cart">
+                        <ul>
+                          <li><a class="fa fa-shopping-cart" href="#"></a></li>
+                          <li><a href="#">ADD TO CART</a></li>
+                          <li><a class="fa fa-heart" href="#"></a></li>
+                          <li><a class="fa fa-search" href="#"></a></li>
+                        </ul>
+                      </div>
+                      <div class="item-new">
+                        <p>New</p>
+                      </div>
+                    </div>
+                    <div class="card-block">
+                      <a href="#">
+                        <h4>gray shadow jean shirt
+                        </h4>
+                      </a>
+                      <p>$158.78
+                        <span><del>$100</del></span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="tr-add-cart">
+                        <ul>
+                          <li><a class="fa fa-shopping-cart" href="#"></a></li>
+                          <li><a href="#">ADD TO CART</a></li>
+                          <li><a class="fa fa-heart" href="#"></a></li>
+                          <li><a class="fa fa-search" href="#"></a></li>
+                        </ul>
+                      </div>
+                      <div class="item-new">
+                        <p>Sale</p>
+                      </div>
+                    </div>
+                    <div class="card-block">                      
+                      <a href="#">
+                        <h4>black men leather coat</h4>
+                      </a>
+                      <p>$160.00
+                        <span><del>$200.00</del></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=========================T-COLSING END==============================-->
+
+
+    <!--=====================PROMOTION BEGIN================================-->
+    <div class="promotion">
+      <div class="row">
+        <div class="left-side-block">
+          <div class="text-wrapper">
+            <div class="ex-left-text">
+              <h2>hausna</h2>
+              <h5>made in men’s wear</h5>
+              <p>SEE OUR EXCLUSIVE COLLECTION</p>
+              <button>SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side-block">
+          <div class="text-wrapper">
+            <div class="ex-left-text">
+              <h5>explore our new collection</h5>
+              <h2>we know your fit</h2>
+              <p>get the extra <span>50%</span> offer today only</p>
+              <button>VIEW COLLECTION</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=========================PROMOTION END==============================-->
+
+
+    <!--=======================F-PRODUCTS BEGIN=============================-->
+    <div class="grid-container featured-products outline">
       <div class="row">
         <div class="heading-wrapper">
-          <h1 class="title-cards">TRENDING CLOTHING</h1>
-          <a href="#" class="trending-category">NEW</a>
-          <i class="x-icon"></i>
-          <a href="#" class="trending-category">TOP RATED</a>
-          <i class="x-icon"></i>
-          <a href="#" class="trending-category">TRENDING</a>
-          <i class="x-icon"></i>
-          <a href="#" class="trending-category">BEST OFFER</a>
+          <h1 class="title-cards">FEATURED PRODUCTS</h1>
         </div>
+      </div>
+      <div class="row">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-block">structured collarless coat</div>
+          </div>
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-block">super Clover Robe Jacket</div>
+          </div>
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-block">full hand animal jacket</div>
+          </div>
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-block">men’s fashion blue jean coat</div>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-block">AROS SLIM HEAVY CHINO</div>
+          </div>
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-block">volv checked casual shirt</div>
+          </div>
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-block">yellow Clover Robe Jacket</div>
+          </div>
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-block">houndsmooth wool t-shirt</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--========================F-PRODUCTS END=============================-->
+
+
+    <!--=========================BLOG BEGIN================================-->
+    <div class="grid-container blog outline">
+      <div class="row">
+
+        <h1 class="title-cards">FRESSH FROM THE BLOG</h1>
+        <a class="scroll-btn-left" href="#">
+          <span><i class="caret-left-icon"></i></span>
+        </a>
+        <a class="scroll-btn-right" href="#">
+          <span><i class="caret-right-icon"></i></span>
+        </a>
       </div>
       <div class="row">
         <div class="scroller-wrapper">
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="card-header">
 
+          <div class="blog-wrapper">
+            <div class="blog-content-wrapper">
+
+              <div class="blog-caption">SOME DATE</div>
+
+              <div class="blog-content">
+                <button>VIEW POST <i class="arrow-right-icon"></i></button>
               </div>
-              <div class="card-block">
-                casual fashion wool coat
-              </div>
+
             </div>
-            <div class="card">
-              <div class="card-header">
+            <div class="blog-img-wrapper"></div>
+          </div>
 
+          <div class="blog-wrapper">
+            <div class="blog-content-wrapper">
+
+              <div class="blog-caption">SOME DATE</div>
+
+              <div class="blog-content">
+                <button>VIEW POST <i class="arrow-right-icon"></i></button>
               </div>
-              <div class="card-block">
-                v-neck men blue t-shirt
-              </div>
+
             </div>
-            <div class="card-wrapper">
-              <div class="card">
-                <div class="card-header">
-
-                </div>
-                <div class="card-block">
-                  gray shadow jean shirt
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header">
-
-                </div>
-                <div class="card-block">
-                  black men leather coat
-                </div>
-              </div>
-            </div>
+            <div class="blog-img-wrapper"></div>
           </div>
         </div>
-        <div class="row">
-          <div class="scroll-btn-wrapper"></div>
+
+      </div>
+    </div>
+    <!--=============================BLOG END================================-->
+
+
+    <!--======================TESTIMONIALS BEGIN=============================-->
+    <div class="grid-container testimonials outline">
+      <div class="row">
+        <div class="testimonials-heading">
+          <i class="comment-icon"></i>
+          <h2>LOVELY CLIENTS COMMENT</h2>
+        </div>
+        <div class="testimonials-content scroller-wrapper">
+          <p>It’s really Awesome Theme &amp; specialy made for brand online shop</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="scroll-btn-wrapper"></div>
+      </div>
+    </div>
+    <!--=====================TESTIMONIALS END================================-->
+
+
+    <!--========================BRAND-LOGOS BEGIN============================-->
+    <div class="grid-container brand-logos outline">
+      <div class="row">
+        <div class="brand-heading">
+          BRANDING<span class="brand-heading-separator"></span>
+          <a href=""><i class="caret-left-icon"></i></a>
+          <a href=""><i class="caret-left-icon"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="brand-content scroller-wrapper">
 
         </div>
       </div>
-      <!--=========================T-COLSING END==============================-->
+    </div>
+    <!--========================BRAND-LOGOS END==============================-->
 
-
-      <!--=====================PROMOTION BEGIN================================-->
-      <div class="extra-grid-container promotion">
-        <div class="row">
-          <div class="left-side-block">
-            <button>SHOP NOW</button>
+  </section>
+  <footer>
+    <!--========================FOOTER BEGIN=================================-->
+    <div class="grid-container outline">
+      <div class="row">
+        <div class="footer-top">
+          <div class="sign-up-newsletter">
+            <span><i class="letter-icon"></i>SIGNUP NEWSLETTER</span>
+            <form action="#">
+              <input type="text" />
+              <input type="submit" value="SUBMIT" />
+            </form>
           </div>
-          <div class="right-side-block">
-            <button>VIEW COLLECTION</button>
+          <div class="payment-cards"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="footer-content">
+
+          <div class="information">
+
+            <h3 class="footer-caption-of-list">INFORMATION</h3>
+
+            <ul class="footer-list">
+              <li><a href="#">New Products</a></li>
+              <li><a href="#">Top Seller</a></li>
+              <li><a href="#">Special</a></li>
+              <li><a href="#">Manufactures</a></li>
+              <li><a href="#">Suppliers</a></li>
+              <li><a href="#">Our Stores</a></li>
+            </ul>
+
+          </div>
+
+          <div class="my-account">
+
+            <h3 class="footer-caption-of-list">MY ACCOUNT</h3>
+
+            <ul class="footer-list">
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Personal Information</a></li>
+              <li><a href="#">Addresses</a></li>
+              <li><a href="#">Discounts</a></li>
+              <li><a href="#">Order History</a></li>
+              <li><a href="#">Your Vouchers</a></li>
+            </ul>
+
+          </div>
+
+          <div class="customer-service">
+
+            <h3 class="footer-caption-of-list">CUSTOMER SERVICE</h3>
+
+            <ul class="footer-list">
+              <li><a href="#">Help &amp; Contact</a></li>
+              <li><a href="#">Shipping &amp; Taxes</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Affliates</a></li>
+              <li><a href="#">Legal Notice</a></li>
+            </ul>
+
+          </div>
+          <div class="contact-info">
+            <h3 class="footer-caption-of-list">CONTACT INFO</h3>
+            <p>Address : 44 New Design Street, Melbourne 005 </p>
+            <p>Phone : (01) 800 433 633</p>
+            <p>Email : info@Example.com </p>
+            <div class="social-networks">
+              <span><i class="fb-icon"></i></span>
+              <span><i class="twitter-icon"></i></span>
+              <span><i class="g-plus-icon"></i></span>
+              <span><i class="insta-icon"></i></span>
+              <span><i class="rss-icon"></i></span>
+            </div>
           </div>
         </div>
       </div>
-      <!--=========================PROMOTION END==============================-->
-
-
-      <!--=======================F-PRODUCTS BEGIN=============================-->
-      <div class="grid-container featured-products outline">
-        <div class="row">
-          <div class="heading-wrapper">
-            <h1 class="title-cards">FEATURED PRODUCTS</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="card-header"></div>
-              <div class="card-block">structured collarless coat</div>
-            </div>
-            <div class="card">
-              <div class="card-header"></div>
-              <div class="card-block">super Clover Robe Jacket</div>
-            </div>
-            <div class="card">
-              <div class="card-header"></div>
-              <div class="card-block">full hand animal jacket</div>
-            </div>
-            <div class="card">
-              <div class="card-header"></div>
-              <div class="card-block">men’s fashion blue jean coat</div>
-            </div>
-          </div>
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="card-header"></div>
-              <div class="card-block">AROS SLIM HEAVY CHINO</div>
-            </div>
-            <div class="card">
-              <div class="card-header"></div>
-              <div class="card-block">volv checked casual shirt</div>
-            </div>
-            <div class="card">
-              <div class="card-header"></div>
-              <div class="card-block">yellow Clover Robe Jacket</div>
-            </div>
-            <div class="card">
-              <div class="card-header"></div>
-              <div class="card-block">houndsmooth wool t-shirt</div>
-            </div>
-          </div>
+      <div class="row">
+        <div class="copyrights">
+          Copyright © 2015 Men’swaer. All Rights Reserved.
         </div>
       </div>
-      <!--========================F-PRODUCTS END=============================-->
-
-
-      <!--=========================BLOG BEGIN================================-->
-      <div class="grid-container blog outline">
-        <div class="row">
-
-          <h1 class="title-cards">FRESSH FROM THE BLOG</h1>
-          <a class="scroll-btn-left" href="#">
-            <span><i class="caret-left-icon"></i></span>
-          </a>
-          <a class="scroll-btn-right" href="#">
-            <span><i class="caret-right-icon"></i></span>
-          </a>
-        </div>
-        <div class="row">
-          <div class="scroller-wrapper">
-
-            <div class="blog-wrapper">
-              <div class="blog-content-wrapper">
-
-                <div class="blog-caption">SOME DATE</div>
-
-                <div class="blog-content">
-                  <button>VIEW POST <i class="arrow-right-icon"></i></button>
-                </div>
-
-              </div>
-              <div class="blog-img-wrapper"></div>
-            </div>
-
-            <div class="blog-wrapper">
-              <div class="blog-content-wrapper">
-
-                <div class="blog-caption">SOME DATE</div>
-
-                <div class="blog-content">
-                  <button>VIEW POST <i class="arrow-right-icon"></i></button>
-                </div>
-
-              </div>
-              <div class="blog-img-wrapper"></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!--=============================BLOG END================================-->
-
-
-      <!--======================TESTIMONIALS BEGIN=============================-->
-      <div class="grid-container testimonials outline">
-        <div class="row">
-          <div class="testimonials-heading">
-            <i class="comment-icon"></i>
-            <h2>LOVELY CLIENTS COMMENT</h2>
-          </div>
-          <div class="testimonials-content scroller-wrapper">
-            <p>It’s really Awesome Theme & specialy made for brand online shop</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="scroll-btn-wrapper"></div>
-        </div>
-      </div>
-      <!--=====================TESTIMONIALS END================================-->
-
-
-      <!--========================BRAND-LOGOS BEGIN============================-->
-      <div class="grid-container brand-logos outline">
-        <div class="row">
-          <div class="brand-heading">
-            BRANDING<span class="brand-heading-separator"></span>
-            <a href=""><i class="caret-left-icon"></i></a>
-            <a href=""><i class="caret-left-icon"></i></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="brand-content scroller-wrapper">
-
-          </div>
-        </div>
-      </div>
-      <!--========================BRAND-LOGOS END==============================-->
-
-    </section>
-    <footer>
-      <!--========================FOOTER BEGIN=================================-->
-      <div class="grid-container outline">
-        <div class="row">
-          <div class="footer-top">
-            <div class="sign-up-newsletter">
-              <span><i class="letter-icon"></i>SIGNUP NEWSLETTER</span>
-              <form action="#">
-                <input type="text" />
-                <input type="submit" value="SUBMIT" />
-              </form>
-            </div>
-            <div class="payment-cards"></div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="footer-content">
-
-            <div class="information">
-
-              <h3 class="footer-caption-of-list">INFORMATION</h3>
-
-              <ul class="footer-list">
-                <li><a href="#">New Products</a></li>
-                <li><a href="#">Top Seller</a></li>
-                <li><a href="#">Special</a></li>
-                <li><a href="#">Manufactures</a></li>
-                <li><a href="#">Suppliers</a></li>
-                <li><a href="#">Our Stores</a></li>
-              </ul>
-
-            </div>
-
-            <div class="my-account">
-
-              <h3 class="footer-caption-of-list">MY ACCOUNT</h3>
-
-              <ul class="footer-list">
-                <li><a href="#">My Account</a></li>
-                <li><a href="#">Personal Information</a></li>
-                <li><a href="#">Addresses</a></li>
-                <li><a href="#">Discounts</a></li>
-                <li><a href="#">Order History</a></li>
-                <li><a href="#">Your Vouchers</a></li>
-              </ul>
-
-            </div>
-
-            <div class="customer-service">
-
-              <h3 class="footer-caption-of-list">CUSTOMER SERVICE</h3>
-
-              <ul class="footer-list">
-                <li><a href="#">Help & Contact</a></li>
-                <li><a href="#">Shipping & Taxes</a></li>
-                <li><a href="#">Return Policy</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Affliates</a></li>
-                <li><a href="#">Legal Notice</a></li>
-              </ul>
-
-            </div>
-            <div class="contact-info">
-              <h3 class="footer-caption-of-list">CONTACT INFO</h3>
-              <p>Address : 44 New Design Street, Melbourne 005 </p>
-              <p>Phone : (01) 800 433 633</p>
-              <p>Email : info@Example.com </p>
-              <div class="social-networks">
-                <span><i class="fb-icon"></i></span>
-                <span><i class="twitter-icon"></i></span>
-                <span><i class="g-plus-icon"></i></span>
-                <span><i class="insta-icon"></i></span>
-                <span><i class="rss-icon"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="copyrights">
-            Copyright © 2015 Men’swaer. All Rights Reserved.
-          </div>
-        </div>
-      </div>
-      <!--========================FOOTER END==================================-->
-    </footer>
-  </body>
-  </html>
+    </div>
+    <!--========================FOOTER END==================================-->
+  </footer>
+</body>
+</html>
