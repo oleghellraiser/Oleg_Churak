@@ -514,7 +514,7 @@ body a {
 }
 .banner .offer-tag {
   top: 0px;
-  left: 654px;
+  left: 607px;
   position: absolute;
 }
 .banner .offer-tag img {
@@ -812,8 +812,11 @@ body a {
   padding: 10px 4px;
   margin-right: 2px;
 }
-.featured-products .card-wrapper {
+.featured-products .card-wrapper.bottom {
   margin-bottom: 40px;
+}
+.featured-products .card-wrapper {
+  float: left;
 }
 .featured-products .card-wrapper .card {
   background-color: #ffffff;
@@ -1237,9 +1240,17 @@ body a {
   background: none repeat scroll 0 0 #232323;
   padding: 70px 0;
 }
+.entire-footer-area .footer-area .single-widget {
+  text-transform: none;
+}
 .entire-footer-area .footer-area .single-widget address {
   color: #aaaaaa;
   line-height: 33px;
+  font-style: normal;
+  font-family: Cabin;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }
 .entire-footer-area .footer-area .single-widget > h5 {
   color: #eeeeee;
