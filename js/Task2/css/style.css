@@ -1,0 +1,21 @@
+
+img {
+border: none;
+}
+.main {
+width: 300px;
+margin: 100px auto;
+position: relative;
+}
+
+#mainBox {
+width: 200px;
+height: 125px;
+overflow: hidden;
+position: relative;
+}
+
+#mainBox img {
+width: 200px;
+height: 125px;
+}
